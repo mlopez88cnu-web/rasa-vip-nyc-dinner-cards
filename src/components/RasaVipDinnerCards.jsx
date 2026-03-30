@@ -42,6 +42,20 @@ const logos = {
       <text x="26" y="32" textAnchor="middle" fontFamily="Arial,sans-serif" fontWeight="800" fontSize="10" fill="#ffffff" letterSpacing="0.5">WFC</text>
     </svg>
   ),
+  "JP Morgan Chase": (s) => (
+    <svg viewBox="0 0 52 52" width={s} height={s}>
+      <rect width="52" height="52" rx="12" fill="#00205B"/>
+      <text x="26" y="27" textAnchor="middle" fontFamily="Georgia,serif" fontWeight="700" fontSize="18" fill="#ffffff">JPM</text>
+      <rect x="12" y="33" width="28" height="1.5" rx="0.75" fill="#ffffff" opacity="0.4"/>
+      <rect x="16" y="37" width="20" height="1.5" rx="0.75" fill="#ffffff" opacity="0.25"/>
+    </svg>
+  ),
+  "Deloitte": (s) => (
+    <svg viewBox="0 0 52 52" width={s} height={s}>
+      <rect width="52" height="52" rx="12" fill="#86BC25"/>
+      <text x="26" y="33" textAnchor="middle" fontFamily="Arial,sans-serif" fontWeight="800" fontSize="20" fill="#ffffff">D.</text>
+    </svg>
+  ),
 };
 
 function CompanyLogo({ company, size = 52 }) {
@@ -178,6 +192,40 @@ const guests = [
       "He's been engaging with AI product management learning resources — ask what frameworks he's found most useful as Wakefern builds out their AI initiatives function.",
       "He's enthusiastic about AI in the supply chain — Wakefern's Afresh deployment with AI agents for fresh buying is a direct match for discussing Rasa's orchestration capabilities.",
       "Wakefern's major loyalty go-live is expected mid-2026 — explore what role AI personalization plays and how conversational AI could enhance the customer experience."
+    ],
+    hasLinkedIn: true,
+  },
+  {
+    name: "Genuan Gunawardhana",
+    photoUrl: "/headshots/Genuan Gunawardhana.jpeg",
+    title: "Product Owner",
+    company: "JP Morgan Chase",
+    industry: "Financial Services",
+    aiStage: "Optimizing",
+    buildVsBuy: "Mixed",
+    agenticReadiness: "High",
+    companyBrief: "JPMorgan Chase has deployed its proprietary LLM Suite to over 200,000 employees and is transitioning toward autonomous AI agents for complex workflows. With a dedicated team of 200+ ML specialists and a mixed build/buy strategy, they prioritize data readiness and secure, scalable integration.",
+    conversationStarters: [
+      "He's been promoting JPMorgan Chase's achievements including 12 Coalition Greenwich 2026 awards — a great opener about what's driving the firm's competitive edge.",
+      "JPMorgan Chase aims to give every employee a personalized AI assistant for complex workflows — ask how his product team is shaping that vision from the ground up.",
+      "He's actively sharing hiring posts for JPMorgan Chase in India — explore how the firm's global AI talent strategy supports their agentic AI ambitions."
+    ],
+    hasLinkedIn: true,
+  },
+  {
+    name: "Georg Huettenegger",
+    photoUrl: "/headshots/Georg Huettenegger.jpeg",
+    title: "Agentic and Conversational AI Leader",
+    company: "Deloitte",
+    industry: "Professional Services & Consulting",
+    aiStage: "Scaling",
+    buildVsBuy: "Mixed",
+    agenticReadiness: "High",
+    companyBrief: "Deloitte is aggressively scaling AI capabilities, offering specialized Generative AI and agentic services while maintaining a robust internal team for MLOps and RAG development. They utilize a mixed build-buy strategy through deep alliances with cloud providers like Google Cloud to deliver industry-specific AI orchestration and autonomous agent solutions.",
+    conversationStarters: [
+      "He's been tracking European AI strategy and geopolitics, including Europe's push for independent AI infrastructure — ask how Deloitte advises global clients navigating these shifting dynamics.",
+      "He engaged with Anthropic's hardware export concerns and Microsoft's multi-vendor AI strategy — explore how Deloitte thinks about vendor diversification for agentic deployments.",
+      "His title is literally 'Agentic and Conversational AI Leader' — a direct match for Rasa's positioning. Ask what he sees as the biggest gaps in enterprise agentic orchestration today."
     ],
     hasLinkedIn: true,
   },
